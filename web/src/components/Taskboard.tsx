@@ -1,14 +1,14 @@
 import { Badge, Card, Button } from "antd";
 import Task from "@/model/Task";
 interface TaskboardProps {
-  title: string;
-  tasks: Task[];
+  readonly title: string;
+  readonly tasks: Task[];
   onComplete?: (taskId: number) => void;
 }
 
 function Taskboard({ title, tasks, onComplete }: TaskboardProps) {
   return (
-    <div style={{ background: '#141414', padding: 16, borderRadius: 8 }}>
+    <div style={{ background: '#141414', padding: 16, borderRadius: 8 , }}>
       <h2 style={{color: "white", marginBottom: 16 }}>
         {title}
         <Badge count={tasks.length} style={{ marginLeft: 8, backgroundColor: '' }} />
