@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { Layout, Typography, Row, Col, Badge, Button } from "antd";
+import { Row, Col} from "antd";
 import Task from "@/model/Task";
-// import Taskboard from "@/components/Taskboard";
 import axios from "axios";
 import LayoutContainer from "@/components/LayoutContainer";
 import Taskboard from "@/components/Taskboard";
-const { Header, Content } = Layout;
 
 
 export default function Home() {
